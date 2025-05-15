@@ -9,16 +9,37 @@
             background-color: #111;
             color: white;
             font-family: 'Arial', sans-serif;
-            text-align: center;
-            padding: 40px;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
-        h1 {
-            font-size: 72px;
-            margin-bottom: 0;
+        .container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+            padding: 20px;
+            max-width: 1200px;
         }
-        h2 {
-            font-size: 64px;
-            margin-top: 0;
+        .left {
+            text-align: left;
+            max-width: 500px;
+        }
+        .left h1 {
+            font-size: 60px;
+            margin: 0;
+        }
+        .left h2 {
+            font-size: 80px;
+            margin: 0;
+        }
+        .left p {
+            font-size: 18px;
+            margin: 10px 0 0;
         }
         .spotify-button {
             margin-top: 20px;
@@ -30,46 +51,54 @@
             display: inline-flex;
             align-items: center;
             text-decoration: none;
+            font-size: 14px;
         }
         .spotify-button img {
             height: 24px;
             margin-right: 10px;
+        }
+        .right {
+            text-align: center;
+        }
+        .right img {
+            width: 250px;
         }
         .side-note {
             background-color: white;
             color: black;
             border-radius: 20px;
             padding: 20px;
-            max-width: 400px;
-            margin: 40px auto 0;
             font-size: 14px;
             line-height: 1.6;
+            max-width: 350px;
+            margin: 20px auto 0;
         }
         .side-note strong {
             font-weight: bold;
         }
-        .stickman {
-            margin-top: 40px;
-            max-width: 250px;
-        }
     </style>
 </head>
 <body>
-    <div>
-        <h1>FALTAM</h1>
-        <h2>8 DIAS</h2>
-        <p>Para o seu aniversário!</p>
-        <a class="spotify-button" href="https://open.spotify.com/track/3AJwUDP919kvQ9QcozQPxg" target="_blank">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Spotify_icon.svg" alt="Spotify">
-            ESCUTE AQUI
-        </a>
-        <div class="stickman">
-            <img src="https://i.imgur.com/Wr0rGDr.png" alt="stickman with cake" width="250"/>
+    <div class="container">
+        <div class="left">
+            <p style="color:white;"><strong>✨ Victoria</strong></p>
+            <h1>FALTAM</h1>
+            <h2>8 DIAS</h2>
+            <p>Para o seu aniversário!</p>
+            <p><strong>A música do dia é</strong></p>
+            <a class="spotify-button" href="https://open.spotify.com/track/3AJwUDP919kvQ9QcozQPxg" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Spotify_icon.svg" alt="Spotify">
+                ESCUTE AQUI
+            </a>
         </div>
-        <div class="side-note">
-            Sabe aquele dia que o homem chegou à lua? Não teria acontecido se não fosse por <strong>Margaret Heafield Hamilton</strong>. Ela era a engenheira de software americana que dirigia o departamento para orientação da Apollo, missão que levou os primeiros astronautas à lua.<br><br>
-            <strong>Isso tudo com 33 anos!</strong>
+        <div class="right">
+            <img src="boneto.png" alt="stickman with cake"/>
+            <div class="side-note">
+                Sabe aquele dia que o homem chegou à lua? Não teria acontecido se não fosse por <strong>Margaret Heafield Hamilton</strong>. Ela era a engenheira de software americana que dirigia o departamento para orientação da Apollo, missão que levou os primeiros astronautas à lua.<br><br>
+                <strong>Isso tudo com 33 anos!</strong>
+            </div>
         </div>
     </div>
 </body>
 </html>
+
